@@ -1,0 +1,17 @@
+{
+  "extends": ["stylelint-config-twbs-bootstrap/scss"],
+  "rules": {
+    "declaration-no-important": null,
+    "order/properties-order": null,
+    "selector-max-class": null,
+    "selector-max-combinators": null,
+    "selector-max-compound-selectors": null,
+    "selector-max-id": null,
+    "selector-max-specificity": null,
+    "selector-max-type": null,
+    "selector-no-qualifying-type": null,
+    "number-leading-zero": "always",
+    "indentation": null,
+    "scss/operator-no-newline-after": null
+  }
+}
