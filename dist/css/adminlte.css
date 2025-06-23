@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  *   AdminLTE v3.2.0
  *   Author: Colorlib
@@ -33014,7 +33015,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
 }
 
 .bg-mycolor {
-  background: #021939;
+  background: #021939 !important;
   color: #fff;
 }
 
@@ -33023,13 +33024,411 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   background: #fff;
 }
 
-.datepicker-days .table td,
-.datepicker-days .table th {
+.logsbuton {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px 12px;
+  background: #fff;
+  border: 1px solid #021939;
+  color: #021939;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logsbuton p {
+  margin-bottom: 0;
+}
+
+.logsbutonperiod {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px 12px;
+  background: #fff;
+  border: 1px solid #021939;
+  color: #021939;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  gap: 32px;
+  cursor: pointer;
+}
+
+.logsbutonperiod p {
+  margin-bottom: 0;
+}
+
+.logsbutonperiod span {
+  font-weight: 900;
+}
+
+.activityadduser {
+  width: 186px !important;
+  top: 52px !important;
+  box-sizing: border-box;
+  z-index: 9999;
+  max-height: 400px !important;
+  overflow: auto !important;
+}
+
+.logsbutonclear {
+  border: unset !important;
+  background-color: unset !important;
+  cursor: pointer;
+}
+
+.add-clients {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px 12px;
+  background: #021939;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-clients p {
+  margin-bottom: 0;
+}
+
+.add-clients span {
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  padding-right: 9px;
+}
+
+.page-item.active .page-link {
+  background: #021939 !important;
+  border-color: #021939 !important;
+  color: #fff !important;
+}
+
+.page-link {
+  color: #021939 !important;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+th {
+  vertical-align: middle !important;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #212529;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.td-name {
+  position: relative;
+  padding-right: 50px;
+  /* Щоб текст не перекривав іконки */
+}
+
+.name-actions {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  display: none;
+  gap: 8px;
+}
+
+.td-name:hover .name-actions {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.action-link {
+  color: #0b1d34;
+  font-size: 14px;
+}
+
+.name-text {
+  display: inline-block;
+}
+
+.dropdown-toggle .arrow {
+  float: right;
+}
+
+.dropdown-menu-sorting {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: unset;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu-sorting li {
+  padding: 13px 0 14px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 3px;
+  border-radius: unset;
+  background-color: #fff;
+  list-style: none;
+  font-weight: 400;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu-sorting li:hover {
+  background-color: #f0f0f0;
+}
+
+.addclients .datepicker-days .table td,
+.addclients .datepicker-days .table th {
   border-top: none;
 }
 
-.datepicker-days .table thead th {
+.addclients .datepicker-days .table thead th {
   border-bottom: 0;
+}
+
+.periodoptions {
+  position: absolute;
+  width: 107px;
+  top: 40px;
+  z-index: 9999;
+}
+
+.periodoptions ul {
+  margin: 0;
+  padding: 0;
+}
+
+.periodoptions ul li {
+  width: 100%;
+  list-style: none;
+  background: #fff;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 3px;
+}
+
+.serviceinfo {
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.serviceinfo p {
+  margin: 0;
+  color: #495057 !important;
+}
+
+.card-header::after {
+  display: none !important;
+}
+
+.wrapperheaderactivies {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.wrapperheaderactivies p {
+  margin: 0;
+}
+
+.todo-list > li:hover .serviceinfo {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.addnewaction {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 13px 20px;
+  margin-bottom: 20px;
+}
+
+.addnewaction .addnewactionitem {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.addnewaction .addnewactionitem p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #495057;
+  margin: 0;
+}
+
+.addnewaction .addnewactionitem input {
+  border: 1px solid #ced4da;
+  height: 30px;
+  max-width: 471px;
+  width: 100%;
+}
+
+.activitytable {
+  display: none;
+}
+
+.activitytable.active {
+  display: block;
+}
+
+.wrapperitemaction {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.wrapperitemaction input {
+  max-width: 180px !important;
+  width: 100% !important;
+}
+
+.requesttab {
+  height: 650px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.requestform {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1075px) {
+  .wrapperitemaction {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .addnewaction {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.useroptions {
+  position: absolute;
+  width: 130px;
+  top: 40px;
+  z-index: 9999;
+}
+
+.useroptions ul {
+  margin: 0;
+  padding: 0;
+}
+
+.useroptions ul li {
+  width: 100%;
+  list-style: none;
+  background: #fff;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 3px;
+}
+
+.report-list {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 9999;
+}
+
+.report-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.report-list ul li {
+  width: 100%;
+  list-style: none;
+  background: #fff;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 3px;
+}
+
+.card-primary.card-outline {
+  border-top: 3px solid #021939 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #021939;
+}
+
+.timeline-header a {
+  color: #021939 !important;
+}
+
+.bg-mycolornon {
+  background-color: none;
+  color: #021939 !important;
+  border: 1px solid #021939;
 }
 
 .small-box {
@@ -33054,11 +33453,6 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   text-align: center;
   text-decoration: none;
   z-index: 10;
-}
-
-.small-box > .small-box-footer:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: #fff;
 }
 
 .small-box h3 {

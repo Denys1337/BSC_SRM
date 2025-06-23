@@ -347,21 +347,14 @@
                       <p>Заявки</p>
                     </a>
                   </li>
-                  <!-- if admin (показувати якщо адмін)-->
-                  <!-- <li class="nav-item">
-                    <a href="./menegers.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Менеджери</p>
-                    </a>
-                  </li> -->
                   <li class="nav-item">
-                    <a href="./reports.html" class="nav-link">
+                    <a href="./index3.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Звіти</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./activities.html" class="nav-link">
+                    <a href="./index3.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Заходи</p>
                     </a>
@@ -379,7 +372,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./notification.html" class="nav-link">
+                    <a href="./index3.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Нотифікації</p>
                     </a>
@@ -1060,13 +1053,13 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Dashboard</h1>
+                <h1 class="m-0">Нотифікації</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Dashboard v1</li>
+                  <li class="breadcrumb-item active">Нотифікації</li>
                 </ol>
               </div>
               <!-- /.col -->
@@ -1080,342 +1073,7 @@
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
-            <!-- Small boxes (Stat box) -->
-            <div class="row">
-              <!-- ./col -->
-              <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box">
-                  <div class="inner">
-                    <h3>53</h3>
-
-                    <p>Всі клієнти</p>
-                  </div>
-                  <a href="#" class="small-box-footer"
-                    >Більше інформації <i class="fas fa-arrow-circle-right"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- ./col -->
-              <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box">
-                  <div class="inner">
-                    <h3>44</h3>
-
-                    <p>Нові клієнти</p>
-                  </div>
-                  <a href="#" class="small-box-footer"
-                    >Більше інформації <i class="fas fa-arrow-circle-right"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- ./col -->
-              <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box">
-                  <div class="inner">
-                    <h3>65</h3>
-
-                    <p>Видалені</p>
-                  </div>
-                  <a href="#" class="small-box-footer"
-                    >Більше інформації <i class="fas fa-arrow-circle-right"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- ./col -->
-              <!-- if admin (показувати якщо адмін) -->
-              <!-- <div class="col-lg-3 col-6">
-                <div class="small-box">
-                  <div class="inner">
-                    <h3>10</h3>
-
-                    <p>Менеджери</p>
-                  </div>
-                  <a href="#" class="small-box-footer"
-                    >Більше інформації <i class="fas fa-arrow-circle-right"></i
-                  ></a>
-                </div>
-              </div> -->
-            </div>
-            <!-- /.row -->
             <!-- Main row -->
-            <div class="row">
-              <!-- Left col -->
-              <section class="col-lg-7 connectedSortable">
-                <!-- PIE CHART -->
-                <div class="card">
-                  <div class="card-header bg-mycolor">
-                    <h3 class="card-title">Відсоткові показники</h3>
-
-                    <div class="card-tools">
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-card-widget="collapse"
-                      >
-                        <i class="fas fa-minus"></i>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-card-widget="remove"
-                      >
-                        <i class="fas fa-times"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <canvas
-                      id="pieChart"
-                      style="
-                        min-height: 225px;
-                        height: 225px;
-                        max-height: 250px;
-                        max-width: 100%;
-                      "
-                    ></canvas>
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
-              </section>
-              <!-- /.Left col -->
-              <!-- right col (We are only adding the ID to make the widgets sortable)-->
-              <section class="col-lg-5 connectedSortable">
-                <!-- Calendar -->
-                <div class="card bg-mycolor">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">
-                      <i class="far fa-calendar-alt"></i>
-                      Calendar
-                    </h3>
-                    <!-- tools card -->
-                    <div class="card-tools">
-                      <!-- button with a dropdown -->
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-calendar btn-sm dropdown-toggle"
-                          data-toggle="dropdown"
-                          data-offset="-52"
-                        >
-                          <i class="fas fa-bars"></i>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                          <a href="#" class="dropdown-item">Add new event</a>
-                          <a href="#" class="dropdown-item">Clear events</a>
-                          <div class="dropdown-divider"></div>
-                          <a href="#" class="dropdown-item">View calendar</a>
-                        </div>
-                      </div>
-                      <button
-                        type="button"
-                        class="btn btn-calendar btn-sm"
-                        data-card-widget="collapse"
-                      >
-                        <i class="fas fa-minus"></i>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-calendar btn-sm"
-                        data-card-widget="remove"
-                      >
-                        <i class="fas fa-times"></i>
-                      </button>
-                    </div>
-                    <!-- /. tools -->
-                  </div>
-                  <!-- /.card-header -->
-                  <div class="card-body pt-0">
-                    <!--The calendar -->
-                    <div id="calendar" style="width: 100%"></div>
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
-              </section>
-              <!-- right col -->
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Клієнти</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>ПІБ</th>
-                      <th>
-                        <div class="custom-dropdown">
-                          <button
-                            class="dropdown-toggle"
-                            id="entrepreneurDropdownBtn"
-                          >
-                            Тип підприємця
-                            <span class="arrow"></span>
-                          </button>
-                          <ul
-                            class="dropdown-menu-sorting"
-                            id="entrepreneurDropdown"
-                          >
-                            <li data-value="">Усі</li>
-                            <li data-value="ФОП">Типи</li>
-                            <li data-value="Юридична особа">Типи</li>
-                          </ul>
-                        </div>
-                      </th>
-                      <th>Сфера</th>
-                      <th>
-                        <div class="custom-dropdown">
-                          <button
-                            class="dropdown-toggle"
-                            id="categoryDropdownBtn"
-                          >
-                            Категорія
-                            <span class="arrow"></span>
-                          </button>
-                          <ul
-                            class="dropdown-menu-sorting"
-                            id="categoryDropdown"
-                          >
-                            <li data-value="">Усі</li>
-                            <li data-value="ФОП">текст</li>
-                            <li data-value="Юридична особа">текст</li>
-                          </ul>
-                        </div>
-                      </th>
-                      <th>
-                        <div class="custom-dropdown">
-                          <button
-                            class="dropdown-toggle"
-                            id="menegerDropdownBtn"
-                          >
-                            Менеджер
-                            <span class="arrow"></span>
-                          </button>
-                          <ul
-                            class="dropdown-menu-sorting"
-                            id="menegerDropdown"
-                          >
-                            <li data-value=""><input type="radio" />Усі</li>
-                            <li data-value="ФОП"><input type="radio" />Типи</li>
-                            <li data-value="Юридична особа">
-                              <input type="radio" />Типи
-                            </li>
-                          </ul>
-                        </div>
-                      </th>
-                      <th>Дата реєстрації</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="td-name">
-                        Gecko
-                        <div class="name-actions">
-                          <a href="/edit/1" class="action-link">
-                            <i class="fas fa-pen"></i>
-                          </a>
-                          <a href="/delete/1" class="action-link">
-                            <i class="fas fa-trash"></i>
-                          </a>
-                        </div>
-                      </td>
-                      <td>Firefox 1.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td class="td-name">
-                        Gecko
-                        <div class="name-actions">
-                          <a href="/edit/1" class="action-link">
-                            <i class="fas fa-pen"></i>
-                          </a>
-                          <a href="/delete/1" class="action-link">
-                            <i class="fas fa-trash"></i>
-                          </a>
-                        </div>
-                      </td>
-                      <td>Firefox 1.5</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td class="td-name">
-                        Gecko
-                        <div class="name-actions">
-                          <a href="/edit/1" class="action-link">
-                            <i class="fas fa-pen"></i>
-                          </a>
-                          <a href="/delete/1" class="action-link">
-                            <i class="fas fa-trash"></i>
-                          </a>
-                        </div>
-                      </td>
-                      <td>Firefox 2.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td class="td-name">
-                        Gecko
-                        <div class="name-actions">
-                          <a href="/edit/1" class="action-link">
-                            <i class="fas fa-pen"></i>
-                          </a>
-                          <a href="/delete/1" class="action-link">
-                            <i class="fas fa-trash"></i>
-                          </a>
-                        </div>
-                      </td>
-                      <td>Firefox 3.0</td>
-                      <td>Win 2k+ / OSX.3+</td>
-                      <td>1.9</td>
-                      <td>A</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td class="td-name">
-                        Gecko
-                        <div class="name-actions">
-                          <a href="/edit/1" class="action-link">
-                            <i class="fas fa-pen"></i>
-                          </a>
-                          <a href="/delete/1" class="action-link">
-                            <i class="fas fa-trash"></i>
-                          </a>
-                        </div>
-                      </td>
-                      <td>Camino 1.0</td>
-                      <td>OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>X</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th colspan="2">CSS grade</th>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
             <!-- TO DO List -->
             <div class="card">
               <div class="card-header">
@@ -1605,7 +1263,6 @@
             <!-- /.card -->
             <!-- /.card -->
             <!-- /.row (main row) -->
-          </div>
           <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
@@ -1679,173 +1336,5 @@
     <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
     <!-- ChartJS -->
     <script src="../../plugins/chart.js/Chart.min.js"></script>
-    <script>
-      $(function () {
-        $("#example1")
-          .DataTable({
-            responsive: true,
-            lengthChange: false,
-            autoWidth: false,
-            buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
-            columnDefs: [
-              {
-                targets: 1,
-                orderable: false,
-              },
-              {
-                targets: 3,
-                orderable: false,
-              },
-              {
-                targets: 4,
-                orderable: false,
-              },
-            ],
-          })
-          .buttons()
-          .container()
-          .appendTo("#example1_wrapper .col-md-6:eq(0)");
-        // $("#example2").DataTable({
-        //   paging: true,
-        //   lengthChange: false,
-        //   searching: false,
-        //   ordering: true,
-        //   info: true,
-        //   autoWidth: false,
-        //   responsive: true,
-        // });
-      });
-    </script>
-    <script>
-      $(function () {
-        // Весь код тут:
-        var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
-
-        var pieData = {
-          labels: ["Red", "Blue", "Yellow"],
-          datasets: [
-            {
-              data: [300, 50, 100],
-              backgroundColor: ["#f56954", "#00a65a", "#f39c12"],
-            },
-          ],
-        };
-
-        var pieOptions = {
-          maintainAspectRatio: false,
-          responsive: true,
-        };
-
-        new Chart(pieChartCanvas, {
-          type: "pie",
-          data: pieData,
-          options: pieOptions,
-        });
-      });
-    </script>
-    <script>
-      const btn = document.getElementById("entrepreneurDropdownBtn");
-      const dropdown = document.getElementById("entrepreneurDropdown");
-
-      btn.addEventListener("click", () => {
-        dropdown.style.display =
-          dropdown.style.display === "block" ? "none" : "block";
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
-          dropdown.style.display = "none";
-        }
-      });
-
-      dropdown.querySelectorAll("li").forEach((item) => {
-        item.addEventListener("click", () => {
-          const selectedValue = item.getAttribute("data-value");
-          btn.innerHTML =
-            item.textContent + '<span class="arrow">&#9662;</span>';
-          dropdown.style.display = "none";
-          filterByEntrepreneurType(selectedValue);
-        });
-      });
-
-      function filterByEntrepreneurType(value) {
-        const rows = document.querySelectorAll("#entrepreneursTable tbody tr");
-        rows.forEach((row) => {
-          const type = row.cells[1].textContent.trim();
-          row.style.display = value === "" || type === value ? "" : "none";
-        });
-      }
-    </script>
-    <script>
-      const btncategory = document.getElementById("categoryDropdownBtn");
-      const dropdowncategory = document.getElementById("categoryDropdown");
-
-      btncategory.addEventListener("click", () => {
-        dropdowncategory.style.display =
-          dropdowncategory.style.display === "block" ? "none" : "block";
-      });
-
-      document.addEventListener("click", (e) => {
-        if (
-          !btncategory.contains(e.target) &&
-          !dropdowncategory.contains(e.target)
-        ) {
-          dropdowncategory.style.display = "none";
-        }
-      });
-
-      dropdowncategory.querySelectorAll("li").forEach((item) => {
-        item.addEventListener("click", () => {
-          const selectedValue = item.getAttribute("data-value");
-          btncategory.innerHTML =
-            item.textContent + '<span class="arrow">&#9662;</span>';
-          dropdowncategory.style.display = "none";
-          filterByEntrepreneurType(selectedValue);
-        });
-      });
-
-      function filterByEntrepreneurType(value) {
-        const rows = document.querySelectorAll("#categoryTable tbody tr");
-        rows.forEach((row) => {
-          const type = row.cells[1].textContent.trim();
-          row.style.display = value === "" || type === value ? "" : "none";
-        });
-      }
-    </script>
-    <script>
-      const btnManager = document.getElementById("menegerDropdownBtn");
-      const dropdownManager = document.getElementById("menegerDropdown");
-
-      // Клік по кнопці: показати/сховати список
-      btnManager.addEventListener("click", (e) => {
-        e.stopPropagation();
-        dropdownManager.style.display =
-          dropdownManager.style.display === "block" ? "none" : "block";
-      });
-
-      // Клік поза меню — закрити
-      document.addEventListener("click", (e) => {
-        if (
-          !btnManager.contains(e.target) &&
-          !dropdownManager.contains(e.target)
-        ) {
-          dropdownManager.style.display = "none";
-        }
-      });
-
-      // Обробка кліку по елементам списку
-      dropdownManager.querySelectorAll("li").forEach((item) => {
-        item.addEventListener("click", () => {
-          const selectedValue = item.getAttribute("data-value");
-
-          // Зміна тексту кнопки
-          btnManager.innerHTML =
-            item.textContent.trim() + '<span class="arrow">&#9662;</span>';
-
-          // Закрити дропдаун
-          dropdownManager.style.display = "none";
-        });
-      });
-    </script>
   </body>
 </html>

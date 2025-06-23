@@ -7,7 +7,7 @@
 }
 
 .bg-mycolor {
-  background: #021939;
+  background: #021939 !important;
   color: #fff;
 }
 
@@ -16,7 +16,184 @@
   background: #fff;
 }
 
-.datepicker-days {
+.logsbuton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  background: #fff;
+  border: 1px solid #021939;
+  color: #021939;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.logsbutonperiod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  background: #fff;
+  border: 1px solid #021939;
+  color: #021939;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  gap: 32px;
+  cursor: pointer;
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    font-weight: 900;
+  }
+}
+
+.activityadduser {
+  width: 186px !important;
+  top: 52px !important;
+  box-sizing: border-box;
+  z-index: 9999;
+  max-height: 400px !important;
+  overflow: auto !important;
+}
+
+.logsbutonclear {
+  border: unset !important;
+  background-color: unset !important;
+  cursor: pointer;
+}
+
+.add-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  background: #021939;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    padding-right: 9px;
+  }
+}
+
+.page-item.active .page-link {
+  background: #021939 !important;
+  border-color: #021939 !important;
+  color: #fff !important;
+}
+
+.page-link {
+  color: #021939 !important;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+th {
+  vertical-align: middle !important;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #212529;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.td-name {
+  position: relative;
+  padding-right: 50px; /* Щоб текст не перекривав іконки */
+}
+
+.name-actions {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  display: none;
+  gap: 8px;
+}
+
+.td-name:hover .name-actions {
+  display: flex;
+}
+
+.action-link {
+  color: #0b1d34;
+  font-size: 14px;
+}
+
+.name-text {
+  display: inline-block;
+}
+
+.dropdown-toggle .arrow {
+  float: right;
+}
+
+.dropdown-menu-sorting {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: unset;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu-sorting li {
+  padding: 13px 0 14px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 3px;
+  border-radius: unset;
+  background-color: #fff;
+  list-style: none;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu-sorting li:hover {
+  background-color: #f0f0f0;
+}
+
+.addclients .datepicker-days {
   .table td,
   .table th {
     border-top: none;
@@ -25,6 +202,192 @@
   .table thead th {
     border-bottom: 0;
   }
+}
+
+.periodoptions {
+  position: absolute;
+  width: 107px;
+  top: 40px;
+  z-index: 9999;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 100%;
+      list-style: none;
+      background: #fff;
+      border-radius: 4px;
+      padding: 7px 12px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.serviceinfo {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0;
+    color: #495057 !important;
+  }
+}
+
+.card-header::after {
+  display: none !important;
+}
+
+.wrapperheaderactivies {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wrapperheaderactivies p {
+  margin: 0;
+}
+
+.todo-list > li:hover .serviceinfo {
+  display: flex !important;
+}
+
+.addnewaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 13px 20px;
+  margin-bottom: 20px;
+
+  .addnewactionitem {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #495057;
+      margin: 0;
+    }
+
+    input {
+      border: 1px solid #ced4da;
+      height: 30px;
+      max-width: 471px;
+      width: 100%;
+    }
+  }
+}
+
+.activitytable {
+  display: none;
+}
+
+.activitytable.active {
+  display: block;
+}
+
+.wrapperitemaction {
+  display: flex;
+  gap: 20px;
+
+  input {
+    max-width: 180px !important;
+    width: 100% !important;
+  }
+}
+
+.requesttab {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.requestform {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1075px) {
+  .wrapperitemaction {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .addnewaction {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.useroptions {
+  position: absolute;
+  width: 130px;
+  top: 40px;
+  z-index: 9999;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 100%;
+      list-style: none;
+      background: #fff;
+      border-radius: 4px;
+      padding: 7px 12px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.report-list {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 9999;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 100%;
+      list-style: none;
+      background: #fff;
+      border-radius: 4px;
+      padding: 7px 12px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.card-primary.card-outline {
+  border-top: 3px solid #021939 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #021939;
+}
+
+.timeline-header a {
+  color: #021939 !important;
+}
+
+.bg-mycolornon {
+  background-color: none;
+  color: #021939 !important;
+  border: 1px solid #021939;
 }
 
 .small-box {
@@ -49,11 +412,6 @@
     text-align: center;
     text-decoration: none;
     z-index: 10;
-
-    &:hover {
-      background-color: rgba($black, 0.15);
-      color: $white;
-    }
   }
 
   h3 {
