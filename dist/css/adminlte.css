@@ -33288,6 +33288,19 @@ th {
   display: flex !important;
 }
 
+.managercardfooter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-footer::after {
+  display: none;
+}
+
 .addnewaction {
   display: -ms-flexbox;
   display: flex;

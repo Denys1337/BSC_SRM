@@ -256,6 +256,16 @@ th {
   display: flex !important;
 }
 
+.managercardfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer::after {
+  display: none;
+}
+
 .addnewaction {
   display: flex;
   justify-content: space-between;
