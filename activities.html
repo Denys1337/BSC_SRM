@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AdminLTE 3 | Dashboard</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-dN+HF+0xj7NtwXG0NcE5eF5mI5YFZmEdFc+hh4phnKGuVBI5cVtmgidbptLh4dNAmuIjYtIxIsEz1UE5Qf7I1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Google Font: Source Sans Pro -->
     <link
       rel="stylesheet"
@@ -1090,7 +1098,13 @@
                   >
                     Учасники
                   </button>
-                  <div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: relative;
+                    "
+                  >
                     <div class="logsbutonperiod">
                       <p>Додати учасника</p>
                       <span>+</span>
@@ -1099,11 +1113,21 @@
                       class="periodoptions activityadduser"
                       style="display: none"
                     >
-                      <ul>
-                        <li>user 1</li>
-                        <li>user 2</li>
-                        <li>user 3</li>
-                      </ul>
+                      <div class="search-input-group">
+                        <input type="text" id="userSearch" placeholder="+380" />
+                        <span
+                          class="search-icon"
+                          id="searchUserBtn"
+                          style="
+                            font-family: 'Font Awesome 5 Free';
+                            color: grey;
+                          "
+                          ><i class="fas fa-search"></i
+                        ></span>
+                      </div>
+
+                      <div class="search-results-label">Результати пошуку:</div>
+                      <ul id="userResults"></ul>
                     </div>
                   </div>
                 </div>
@@ -1287,15 +1311,108 @@
                       class="periodoptions activityadduser"
                       style="display: none"
                     >
-                      <ul>
-                        <li>user 1</li>
-                        <li>user 2</li>
-                        <li>user 3</li>
-                      </ul>
+                      <div class="search-input-group">
+                        <input type="text" id="userSearch" placeholder="+380" />
+                        <span
+                          class="search-icon"
+                          id="searchUserBtn"
+                          style="
+                            font-family: 'Font Awesome 5 Free';
+                            color: grey;
+                          "
+                          ><i class="fas fa-search"></i
+                        ></span>
+                      </div>
+
+                      <div class="search-results-label">Результати пошуку:</div>
+                      <ul id="userResults"></ul>
                     </div>
                   </div>
                 </div>
               </div>
+              <style>
+                .search-input-group {
+                  display: flex;
+                  padding-bottom: 4px;
+                  border-bottom: 1px solid #262626;
+                }
+
+                .periodoptions {
+                  border: 1px solid #262626;
+                  background: #fff;
+                  border-radius: 4px;
+                  padding: 8px 12px;
+                  box-sizing: border-box;
+                }
+
+                #userSearch {
+                  border: none;
+                  outline: none;
+                  width: 100%;
+                }
+
+                .search-results-label {
+                  color: #d9d9d9;
+                  font-family: "Source Sans Pro";
+                  font-size: 12px;
+                  padding-bottom: 4px;
+                  font-weight: 400;
+                }
+
+                .periodoptions ul {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 4px;
+                }
+
+                .periodoptions ul li {
+                  color: #262626;
+                  font-family: "Source Sans Pro";
+                  font-size: 16px;
+                  font-weight: 400;
+                  padding: 0 !important;
+                }
+              </style>
+              <script>
+                const users = [
+                  { phone: "931234567", name: "ПІБ клієнта №1" },
+                  { phone: "987654321", name: "ПІБ клієнта №2" },
+                  { phone: "991112233", name: "ПІБ клієнта №3" },
+                ];
+
+                document
+                  .getElementById("searchUserBtn")
+                  .addEventListener("click", function () {
+                    const input = document
+                      .getElementById("userSearch")
+                      .value.trim();
+                    const resultsContainer =
+                      document.getElementById("userResults");
+                    resultsContainer.innerHTML = "";
+
+                    const searchValue = input
+                      .replace("+380", "")
+                      .replace(/\D/g, "");
+
+                    if (searchValue.length === 0) return;
+
+                    const filtered = users.filter((user) =>
+                      user.phone.includes(searchValue)
+                    );
+
+                    if (filtered.length === 0) {
+                      resultsContainer.innerHTML =
+                        "<li>Нічого не знайдено</li>";
+                    } else {
+                      filtered.forEach((user) => {
+                        const li = document.createElement("li");
+                        li.textContent = `${user.name}`;
+                        resultsContainer.appendChild(li);
+                      });
+                    }
+                  });
+              </script>
+
               <!-- /.card-header -->
               <div id="block2" class="card-body activitytable">
                 <table id="example1" class="table table-bordered table-striped">
@@ -1675,11 +1792,11 @@
       });
 
       // Закриття при кліку поза дропдаунами
-      document.addEventListener("click", function () {
-        document.querySelectorAll(".periodoptions").forEach((dropdown) => {
-          dropdown.style.display = "none";
-        });
-      });
+      // document.addEventListener("click", function () {
+      //   document.querySelectorAll(".periodoptions").forEach((dropdown) => {
+      //     dropdown.style.display = "none";
+      //   });
+      // });
     </script>
     <script>
       const btnManager = document.getElementById("menegerDropdownBtn");
